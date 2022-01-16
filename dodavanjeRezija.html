@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dodavanje režija</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Iva Kozmač">
+    <link rel="stylesheet" href="css/izgled.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./dodavanjeRezija.js" defer></script>
+    <script type="module" src="./odjava.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h2 class="najmovi">Najmovi</h2>
+        </div>
+
+        <button id="btnOdjava" class='btnOdjava' type='button' value='ODJAVA' name='submit'>ODJAVA</button> 
+        
+    </header>
+
+    <nav class="navigation">
+        <a href="pregledNajmova.html" class="navigation-item pocetna">Pregled najmova</a>
+    </nav>
+
+
+    <section id="section__container-dodavanjeRezija">
+        <h2 class="naslov__dodavanjeRezija" style="text-align: center; margin-bottom: 30px;">Dodavanje režija</h2>
+
+        <div class="section__dodavanjeRezija">
+
+            <form class="form-dodajRezije" method="POST" action="">
+
+                <fieldset>
+                    <div class="section__dodajRezije-items">
+                        <label class="label__nazivNajma" for="mjesecRezija">Mjesec režija: </label><br>
+                        <select name="mjesecSelect" id="mjesecSelect"
+                            style="width: 100%; height: 30px; margin-top: 5px;" placeholder="Mjesec">
+                            <option value="Siječanj">Siječanj</option>
+                            <option value="Veljača">Veljača</option>
+                            <option value="Ožujak">Ožujak</option>
+                            <option value="Travanj">Travanj</option>
+                            <option value="Svibanj">Svibanj</option>
+                            <option value="Lipanj">Lipanj</option>
+                            <option value="Srpanj">Srpanj</option>
+                            <option value="Kolovoz">Kolovoz</option>
+                            <option value="Rujan">Rujan</option>
+                            <option value="Listopad">Listopad</option>
+                            <option value="Studenti">Studenti</option>
+                            <option value="Prosinac">Prosinac</option>
+                        </select>
+                    </div>
+                    <div class="section__dodajRezije-items">
+                        <label class="label__nazivNajma" for="ime">Godina režija (2020, 2021, ...): </label><br>
+                        <input name="nazivNajma" id="nazivNajma" value="" type="text"
+                            style="width: 100%; height: 30px; margin-top: 5px;" placeholder="Mjesec">
+                    </div>
+
+                    <div class="section__dodajRezije-items">
+                        <label for="" style="margin-top: 3rem">Režije</label>
+                        <div class="table-searchable rezije-table">
+                            <div class="horizontal-table">
+                                <table id="rezijeTable" class="table rezije_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Vrsta režija</th>
+                                            <th>Cijena(kn)</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="dodaj-rezije">
+                                <div class="dodajRezije-container">
+                                    <label for="rezijeSelect">Dodaj vrstu režija</label>
+                                    <select name="rezijeSelect" id="rezijeSelect">
+                                        <option value="Voda">Voda</option>
+                                        <option value="Struja">Struja</option>
+                                        <option value="Plin">Plin</option>
+                                        <option value="Pričuva">Pričuva</option>
+                                        <option value="Smeće">Smeće</option>
+                                        <option value="Internet">Internet</option>
+                                        <option value="Telefon">Telefon</option>
+                                    </select>
+                                    <label class="label__cijena" for="cijena">Cijena: </label><br>
+                                    <input name="cijena" id="cijena" value="" type="cijena"
+                                        style="width: 100%; height: 30px; margin-top: 5px;"
+                                        placeholder="Unesite cijenu">
+                                </div>
+
+                                <button type="button" id="dodajRezijeButton" class="dodajRezijeButton">Dodaj
+                                    režije</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" id="dodajUkupnoRezijeButton" class="dodajUkupnoRezijeButton">Spremi</button>
+                </fieldset>
+
+            </form>
+
+    </section>
+
+</body>
+
+</html>

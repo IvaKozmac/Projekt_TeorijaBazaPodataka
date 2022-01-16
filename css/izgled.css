@@ -1,0 +1,723 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+/*HEADER*/
+.header {
+    background: rgb(129, 156, 187);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+  
+.header__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    float: left;
+}
+  
+.najmovi {
+    float: left;
+    margin: 15px 0 20px 25px;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+}
+
+.btnOdjava{
+    float: right;
+    height: 30px;
+    margin: 20px 25px 0 0px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-top: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+  
+  
+/*izbornik*/
+  
+.navigation {
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+    text-align: center;
+    background: rgb(164, 167, 166);
+    
+}
+
+.navigation-item{
+  display: inline-block;
+  text-decoration: none;    
+  color: rgb(0, 0, 0);
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+  
+  
+/*REGISTRACIJA*/
+
+#section__container-korisnici {
+    background: rgb(179, 179, 179);
+    background: radial-gradient(circle, rgba(179, 179, 179, 1) 0%, rgba(232, 234, 235, 1) 100%);
+}
+  
+.section__korisnici {
+    max-width: 600px;
+    padding: 20px 80px 80px 80px;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+  
+.form-dodajKorisnika {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px;
+}
+  
+.section__korisnici-items {
+    margin: 15px 10px 15px 10px;
+}
+  
+.korisniciButton {
+    display: inline-block;
+    height: 35px;
+    width: 70%;
+    margin: 25px 0px 25px 0px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+  
+.korisniciButton:hover {
+    box-shadow: 2px 2px 10px rebeccapurple;
+}
+
+
+/*DODAJ NAJAM*/
+
+#section__container-dodajNajam {
+    background: rgb(179, 179, 179);
+    background: radial-gradient(circle, rgba(179, 179, 179, 1) 0%, rgba(232, 234, 235, 1) 100%);
+}
+  
+.section__dodajNajam {
+    max-width: 600px;
+    padding: 20px 80px 80px 80px;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+  
+.form-dodajNajam {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px;
+}
+  
+.section__dodajNajam-items {
+    margin: 15px 10px 15px 10px;
+}
+  
+.dodajNajamButton {
+    display: inline-block;
+    height: 35px;
+    width: 70%;
+    margin: 25px 0px 25px 0px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+  
+.dodajNajamButton:hover {
+    box-shadow: 2px 2px 10px rebeccapurple;
+}
+
+/*PRIJAVA*/
+
+#section__container-prijava {
+  background: rgb(179, 179, 179);
+  background: radial-gradient(circle, rgba(179, 179, 179, 1) 0%, rgba(232, 234, 235, 1) 100%);
+  ;
+}
+
+.section__prijava {
+  max-width: 600px;
+  padding: 20px 80px 80px 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+}
+
+.form-prijava {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.section_title__prijava {
+  text-align: center;
+  padding: 20px;
+}
+
+.section__prijava-item {
+  margin: 15px 10px 15px 10px;
+}
+
+.prijavaButton {
+  display: inline-block;
+  height: 35px;
+  width: 30%;
+  margin: 25px 5px 25px 5px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(197,246,254);
+  background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+  position: relative;
+  left: 40%;
+  transform: translateX(-25%);
+}
+
+.prijavaButton:hover {
+  box-shadow: 2px 2px 10px rebeccapurple;
+}
+
+/*PREGLED NAJMOVA*/
+
+#section__container-pregledNjamova {
+    background: whitesmoke;
+}
+
+.section__pregledNajmova {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.najam {
+  width: 350px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.10s cubic-bezier(.25,.8,.25,1);
+  margin: 0 25px 25px 25px;
+}
+
+.box-najam{
+  width: 100%;
+  height: 220px;
+  margin: 0;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.najam-slika{
+  width: 100%;
+  height: 100%;
+  object-fit:scale-down;
+}
+
+.najam-title {
+    text-align: center;
+}
+
+.button_informacije {
+  display: block;
+  text-decoration:double;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  background: darkslategrey;
+  color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+    background-color: forestgreen;
+}
+
+/*DODAVANJE REŽIJA*/
+
+#section__container-dodavanjeRezija {
+    background: rgb(179, 179, 179);
+    background: radial-gradient(circle, rgba(179, 179, 179, 1) 0%, rgba(232, 234, 235, 1) 100%);
+}
+  
+.section__dodavanjeRezija {
+    max-width: 700px;
+    padding: 20px 10px 80px 80px;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+  
+.form-dodajRezije {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px;
+}
+  
+.section__dodajRezije-items {
+    margin: 15px 10px 15px 10px;
+}
+  
+.dodajRezije-container {
+    width: 70% !important;
+  }
+
+.dodaj-rezije select {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.dodaj-rezije {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    align-items: flex-end !important;
+    margin: 0 !important;
+}
+
+.rezije-table table > td {
+    padding-bottom: 0 !important;
+  }
+
+.rezije-table {
+    border: 1px solid rgba(105, 105, 105, 0.7);
+    border-radius: 0 5px 0 5px;
+    padding: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+#rezijeTable {
+    border: 1px solid black !important;
+    width: 100%;
+    text-align: center;
+}
+
+#rezijeTable td {
+    border: 1px solid black;
+}
+
+#rezijeTable th {
+    border: 1px solid black;
+    height: 30px;
+}
+
+.dodajUkupnoRezijeButton {
+    display: inline-block;
+    height: 35px;
+    width: 70%;
+    margin: 25px 0px 25px 0px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+#dodajRezijeButton {
+    margin: 0 !important;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.rezije_table input {
+    width: 100%;
+    margin: auto;
+  }
+  
+.rezije_table th {
+    height: 50px;
+  }
+
+
+.horizontal-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#rezijeTable td > button {
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(146, 64, 64) !important;
+  }
+  
+#rezijeTable td > button[name="submitObrisi"] {
+    background-color: rgba(211, 68, 68, 0.6);
+  }
+  
+#rezijeTable td > button[name="submitUredi"] {
+    background-color: var(--purple);
+}
+
+
+/*DETALJI O NAJMU*/
+
+#section__container-detaljiNajma {
+    background: whitesmoke;
+    padding-top: 40px;
+}
+
+.section__detaljiNajma {
+    max-width: 900px;
+    padding: 20px 40px 20px 40px;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__detaljiNajma1{
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+}
+
+.section__detaljiNajma2 {
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: fit-content;
+  
+}
+
+.detaljiNajma-items{
+    margin: 10px 10px 10px 10px;
+    flex-direction: row;
+}
+
+.najam-slika {
+  width: 300px;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.section__detaljiNajma-items{
+    margin: 10px 10px 10px 10px;
+
+}
+
+.rezijeButton{
+    margin: 0 !important;
+    width: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(0, 0, 0);
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#table__rezije{
+    margin: 40px 10px 40px 10px;
+}
+  
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+th, td{
+    padding: 10px;
+    text-align: center;
+    width: 10%;
+    
+}
+
+#table__najam{
+    margin: 40px 10px 40px 10px;
+}
+
+#unesiNoveRezije{
+    margin: 0 !important;
+    width: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(0, 0, 0);
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#unesiNoviNajam{
+    margin: 0 !important;
+    width: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(0, 0, 0);
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*PREGLED REŽIJA*/
+
+#section__container-detaljiRezija {
+    background: whitesmoke;
+    padding-top: 40px;
+}
+
+.section__detaljiRezija {
+    max-width: 900px;
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__detaljiRezija-items{
+    margin: 20px 10px 10px 10px;
+
+}
+
+.placeno2Button{
+    margin: 0 !important;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.izbrisiNajamButton {
+    display: inline-block;
+    height: 35px;
+    width: 70%;
+    margin: 25px 0px 25px 0px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    margin: 0 10px 10px 0;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+    border-radius: 18px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  .switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .switch-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #eceeef;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  }
+  .switch-label:before, .switch-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+  }
+  .switch-label:before {
+    content: attr(data-off);
+    right: 11px;
+    color: #aaaaaa;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  }
+  .switch-label:after {
+    content: attr(data-on);
+    left: 11px;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+  }
+  .switch-input:checked ~ .switch-label {
+    background: #0088cc;
+    border-color: #0088cc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  .switch-input:checked ~ .switch-label:before {
+    opacity: 0;
+  }
+  .switch-input:checked ~ .switch-label:after {
+    opacity: 1;
+  }
+  .switch-handle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  .switch-handle:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+    border-radius: 6px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+  }
+  .switch-input:checked ~ .switch-handle {
+    left: 74px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .switch-label, .switch-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+  }
+
+
+/*DODAVANJE NAJAMNINE*/
+
+.dodajNajamninu{
+    display: inline-block;
+    height: 35px;
+    width: 70%;
+    margin: 25px 0px 25px 0px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(197,246,254);
+    background: radial-gradient(circle, rgba(197,246,254,1) 0%, rgba(152,187,204,1) 100%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section__container-dodavanjeNajamnine {
+    padding-top: 60px;
+    background: rgb(179, 179, 179);
+    background: radial-gradient(circle, rgba(179, 179, 179, 1) 0%, rgba(232, 234, 235, 1) 100%);
+}
+  
+.section__dodavanjeNajamnine {
+    max-width: 700px;
+    padding: 20px 10px 200px 10px;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+  
+.form-dodajNajamninu {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px;
+}
+  
+.section__dodajNajamninu-items {
+    margin: 15px 10px 15px 10px;
+}
+  
+.dodajNajamninu-container {
+    width: 70% !important;
+  }
+

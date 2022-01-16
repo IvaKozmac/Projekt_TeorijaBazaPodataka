@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="hr"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detalji režija</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Iva Kozmač">
+    <link rel="stylesheet" href="css/izgled.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./detaljiRezija.js" defer></script>
+    <script type="module" src="./odjava.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h2 class="najmovi" >Najmovi</h2>
+        </div>
+
+        <button id="btnOdjava" class='btnOdjava' type='button' value='ODJAVA' name='submit'>ODJAVA</button> 
+
+    </header>
+
+    <nav class="navigation">
+        <a href="pregledNajmova.html" class="navigation-item pocetna">Pregled najmova</a>
+        <a href="dodavanjeKorisnika.html" class="navigation-item galerija">Dodavanje korisnika</a>
+    </nav>
+
+
+    <section id="section__container-detaljiRezija">
+        <h2 class="naslov__detaljiRezija" style="text-align: center; margin-bottom: 30px;">Detalji o režijama</h2>
+
+        <div class="section__detaljiRezija" id="rezijeContainer">
+            <div class='section__detaljiRezija-items'>
+                <label class='label__mjesec' for='mjesec'>Mjesec:</label><br>
+                <input name='input__mjesec' id='input__mjesec' value='' type='text' disabled style='width: 50%; height: 30px; margin-top: 5px;'>
+            </div>
+
+            <div class='section__detaljiRezija-items'>
+                <label class='label__godina' for='godina'>Godina:</label><br>
+                <input name='input__godina' id='input__godina' value='' type='text' disabled style='width: 50%; height: 30px; margin-top: 5px;'>
+            </div>
+
+            <div class='section__detaljiRezija-items'>
+                <label class='stavkeRezija' for='stavkeRezija'>Stavke režija </label><br>
+                <table id='table__stavkeRezija' class='table__stavkeRezija'>
+                    <thead>
+                     <tr>
+                        <td style='border: 2px solid black;'>Vrsta režija</td>
+                        <td style='border: 2px solid black;'>Cijena(kn)</td>
+                     </tr>
+                    </thead>
+                    <tbody id="vrstaRezijaTable">
+                        
+                         
+                    </tbody>
+                </table>
+            </div>
+
+            <div class='section__detaljiRezija-items'>
+                <label class='label__status' for='status'>Status</label><br>
+                <input name='input__status' id='input__status' value='' type='text' disabled style='width: 50%; height: 30px; margin-top: 5px; margin-bottom: 5px;'><br>
+
+                <label class="switch">
+                    <input id="placenoToggle" class="switch-input" type="checkbox" />
+                    <span class="switch-label" data-on="PLačeno" data-off="Nije plačeno"></span> 
+                    <span class="switch-handle"></span> 
+                </label>
+
+            </div>
+            
+        </div>
+
+    </section>
+        
+</body>
+</html>

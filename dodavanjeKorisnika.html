@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="hr"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registriraj se</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Iva Kozmač">
+    <link rel="stylesheet" href="css/izgled.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="dodavanjaKorisnika.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h2 class="najmovi" >Najmovi</h2>
+        </div>
+
+    </header>
+
+    <nav class="navigation">
+        <a href="prijava.html" class="navigation-item pocetna">Prijava</a>
+    </nav>
+
+    <section id="section__container-korisnici">
+        <div class="section__korisnici">
+            <h2 class="naslov__korisnici" style="text-align: center; margin-bottom: 30px;">Registriraj se</h2>
+            <form class="form-dodajKorisnika" method="POST" 
+                action="">
+
+                <fieldset>
+                    <div class="section__korisnici-items">
+                        <label class="label__ime" for="ime">Ime: </label><br>
+                        <input name="ime" id="ime" value="" type="text" style="width: 100%; height: 30px; margin-top: 5px;"
+                            placeholder="Ime">    
+                    </div>
+
+                    <div class="section__korisnici-items">
+                        <label class="label__prezime" for="prezime">Prezime: </label><br>
+                        <input name="prezime" id="prezime" value="" type="text" style="width: 100%; height: 30px; margin-top: 5px;"
+                            placeholder="Prezime"> 
+                    </div>
+
+                    <div class="section__korisnici-items">
+                        <label class="label__brojMobitela" for="broj_mobitela">Broj mobitela: </label><br>
+                        <input name="broja_mobitela" id="brojMobitela" value="" style="width: 100%; height: 30px; margin-top: 5px;" type="text"
+                            placeholder="Broj mobitela" maxlength="20" size="20">
+                            
+                    </div>
+
+                    <div class="section__korisnici-items">
+                        <label class="label__email" for="email">E-mail: </label><br>
+                        <input name="email" id="email" value="" style="width: 100%; height: 30px; margin-top: 5px;"  type="email"
+                            placeholder="E-mail"> 
+                    </div>
+
+                
+
+                    <div class="section__korisnici-items">
+                        <label class="label__privremenaLozinka" for="privremenaLozinka">Lozinka:  </label><br>
+                        <input name="privremenaLozinka" id="lozinka" value="" style="width: 100%; height: 30px; margin-top: 5px;"  type=""
+                            placeholder="Lozinka"> 
+                    </div>
+
+                    <button type="submit" id="korisniciButton" class="korisniciButton">Registriraj se</button>
+
+                    <div id="html_element"></div>
+                </fieldset>
+
+            </form>
+            
+        </div>
+
+    </section>
+</body>
+
+
+
+
+</html>

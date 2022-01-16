@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dodavanje najmova</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Iva Kozmač">
+    <link rel="stylesheet" href="css/izgled.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./dodavanjeNajma.js" defer></script>
+    <script src="./odjava.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h2 class="najmovi"> Najmovi</h2>
+        </div>
+        <button id="btnOdjava" class='btnOdjava' type='button' value='ODJAVA' name='submit'>ODJAVA</button>
+
+    </header>
+    <nav class="navigation"> <a href="pregledNajmova.html" class="navigation-item pocetna"> Pregled najmova </a>
+        <a href="dodavanjeKorisnika.html" class="navigation-item galerija"> Dodavanje korisnika </a> </nav>
+    <section id="section__container-dodajNajam">
+        <div class="section__dodajNajam">
+            <h2 class="naslov__dodajNajam" style="text-align: center; margin-bottom: 30px;"> Dodavanje najma <h2>
+                    <form class="form-dodajNajam" method="POST" action="">
+
+                        <fieldset>
+                            <div class="section__dodajNajam-items">
+                                <label class="label__nazivNajma" for="ime"> Naziv najma: </label> <br> <input
+                                    name="nazivNajma" id="nazivNajma" value="" type="text"
+                                    style="width: 100%; height: 30px; margin-top: 5px;" placeholder="Naziv najma">
+                            </div>
+
+                            <div class="section__dodajNajam-items"> <label class="label__prezime" for="prezime"> Datum
+                                    sklapanja ugovora : </label>
+                                <br><input name="datumSklapanjaUgovora" id="datumSklapanjaUgovora" value="" type="date"
+                                    style="width: 100%; height: 30px; margin-top: 5px;"
+                                    placeholder="Datum sklapanja ugovora"> </div>
+
+                            <div class="section__dodajNajam-items"> <label class="label__prezime" for="prezime"> Ugovor
+                                    vrijedi do:</label>
+                                <br><input name="ugovorVrijedoDo" id="ugovorVrijediDo" value="" type="date"
+                                    style="width: 100%; height: 30px; margin-top: 5px;" placeholder="Ugovor vrijedi do">
+                            </div>
+
+                            <div class="section__dodajNajam-items">
+                                <div class="section__dodajNajam-items">
+                                    <label id="vrstaNajma" for="vrstaNajma"> Vrsta najma </label>
+
+                                    <select name="vrstaNajma" id="vrstaNajmaSelect"
+                                        style="width: 100%; height: 30px; margin-top: 5px;">
+
+                                    </select> </div>
+                                <div class="section__dodajNajam-items"> <label id="najmodavac" for="najmodavac">
+                                        Najmodavac </label>
+
+                                    <select name="najmodavac" id="najmodavacInput" disabled
+                                        style="width: 100%; height: 30px; margin-top: 5px;">
+
+                                    </select>
+                                </div>
+
+                                <div class="section__dodajNajam-items"> <label id="najmoprimac" for="najmoprimac">
+                                        Najmoprimac </label>
+
+                                    <select name="najmoprimac" id="najmoprimacSelect"
+                                        style="width: 100%; height: 30px; margin-top: 5px;">
+
+                                    </select>
+                                </div>
+                                <div class="section__dodajNajam-items"> <label class="label__prezime" for="prezime">
+                                        Cijena najma: </label> <br> <input name="cijenaNajma" id="cijenaNajma" value=""
+                                        type="text" style="width: 100%; height: 30px; margin-top: 5px;"
+                                        placeholder="Cijena najma"> </div>
+
+                                <div class="section__dodajNajam-items">
+                                    <label id="adressa" for="adresa"> Adresa </label> <input name="adresa" id="adresa"
+                                        alue="" type="text" style="width: 100%; height: 30px; margin-top: 5px;"
+                                        placeholder="Adresa"> </input>
+
+                                </div>
+                                <div class="section__dodajNajam-items">
+                                    <label id="detaljiUgovora" for="ugovor"> Upišite detalje s ugovora </label>
+                                    <textarea name="ugovor" id="ugovor" cols="30" rows="10"
+                                        style="resize: none; width: 100%;"> </textarea>
+                                </div>
+
+                                <button type="button" id="dodajNajamButton" class="dodajNajamButton"> Spremi </button>
+
+                        </fieldset>
+                    </form>
+        </div>
+
+    </section>
+</body>
+
+</html>

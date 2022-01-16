@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Prijava</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Autor" content="Iva Kozmač">
+        <link rel="stylesheet" href="css/izgled.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="./prijava.js" defer></script>
+    </head>
+    
+
+    <body>
+        <header class="header">
+            <div class="header__inner">
+                <h2 class="najmovi" >Najmovi</h2>
+            </div>
+
+        </header>
+
+        <nav class="navigation">
+            <a href="dodavanjeKorisnika.html" class="navigation-item pocetna">Registracija</a>
+        </nav>
+
+        <section id="section__container-prijava">
+            <div class="section__prijava">
+                <h2 class="section_title__prijava">Prijava</h2>
+                    
+                <form class="form-prijava" method="POST" action="">
+                    <fieldset>
+                        <div class="section__prijava-item">
+                            <label class="label__email" for="email">E-mail: </label><br>
+                            <input name="email" id="email" value="" type="text"
+                                style="width: 100%; height: 30px; margin-top: 5px;" placeholder="Unesite svoj email">
+                            <br>
+                        </div>
+                        <div class="section__prijava-item">
+                            <label class="label__lozinka" for="password">Lozinka: </label><br>
+                            <input name="password" id="password" value="" type="password"
+                                style="width: 100%; height: 30px; margin-top: 5px;" placeholder="Unesite lozinku">
+                        </div>
+    
+                        <button class="prijavaButton" id="prijavaButton" value="" type="button" name="submit">Prijavi se</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </body>
+
+    
+
+</html>
+

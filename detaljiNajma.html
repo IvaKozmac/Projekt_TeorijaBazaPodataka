@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="hr"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detalji najma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Iva Kozmač">
+    <link rel="stylesheet" href="css/izgled.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./detaljiNajma.js" defer></script>
+    <script type="module" src="./odjava.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h2 class="najmovi" >Najmovi</h2>
+        </div>
+
+        <button id="btnOdjava" class='btnOdjava' type='button' value='ODJAVA' name='submit'>ODJAVA</button> 
+
+    </header>
+
+    <nav class="navigation">
+        <a href="pregledNajmova.html" class="navigation-item pocetna">Pregled najmova</a>
+    </nav>
+
+    <section id="section__container-detaljiNajma">
+        <h2 class="naslov__detaljiNajma" style="text-align: center; margin-bottom: 30px;">Detalji o najmu</h2>
+
+        <div class="section__detaljiNajma">
+
+            <div class="section__detaljiNajma1">
+
+                <img class="najam-slika" src="multimedija/najam.jpg" alt="Najam1">
+
+                <div class="section__detaljiNajma2">
+
+                    <div class="detaljiNajma-items">
+                        <label class="label__nazivNajma" for="naziv">Naziv najma: </label><br>
+                        <input name="input__nazivNajma" id="input__nazivNajma" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;">
+                    </div>
+
+                    <div class="detaljiNajma-items">
+                        <label class="label__vrstaNajma" for="vrstaNajma">Vrsta najma: </label><br>
+                        <input name="input__vrstaNajma" id="input__vrstaNajma" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;">
+                    </div>
+
+                    <div class="detaljiNajma-items">
+                        <label class="label__datum" for="datum">Datum sklapanja ugovora: </label><br>
+                        <input name="input__datum" id="input__datum" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;">
+                    </div>  
+
+                </div>
+
+            </div>
+
+            <div class="section__detaljiNajma-items">
+                <label class="label__najmodavac" for="najmodavac">Najmodavac: </label><br>
+                <input name="input__najmodavac" id="input__najmodavac" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;"> 
+            </div>
+
+            <div class="section__detaljiNajma-items">
+                <label class="label__najmoprimac" for="najmoprimac">Najmoprimac: </label><br>
+                <input name="input__najmoprimac" id="input__najmoprimac" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;">
+            </div>
+
+            <div class="section__detaljiNajma-items">
+                <label class="label__detaljiUgovor" for="detaljiUgovor">Detalji s ugovora: </label><br>
+                <textarea name="input__detaljiUgovora" id="input__detaljiUgovora" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;"></textarea > 
+            </div>
+
+            <div class="section__detaljiNajma-items">
+                <label class="label__kreiranje" for="kreiranje">Datum kreiranja najma: </label><br>
+                <input name="input__datumKreiranjaNajma" id="input__datumKreiranjaNajma" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;">
+            </div>
+
+            <div class="section__detaljiNajma-items">
+                <label class="label__kreiranje" for="kreiranje">Ugovor vrijedi do:  </label><br>
+                <input name="input__ugovorVrijedi" id="input__ugovorVrijedi" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;">
+            </div>
+
+            <div class="section__detaljiNajma-items">
+                <label class="label__cijenaNajma" for="cijenaNajma">Cijena najma: </label><br>
+                <input name="input__cijenaNajma" id="input__cijenaNajma" value="" type="text" disabled style="width: 100%; height: 30px; margin-top: 5px;"> 
+            </div>
+
+            <div class="section__detaljiNajma-items">
+                <label class="label__rezije" for="label__rezije">Režije</label><br>
+                <table id="table__rezije" class="table__rezije">
+                    <thead>
+                     <tr>
+                         <td style="border: 2px solid black;">Mjeseci</td>
+                         <td style="border: 2px solid black;">Godina</td>
+                         <td style="border: 2px solid black;">Status</td>
+                         <td style="border: 2px solid black;"></td>
+                     </tr>
+                    </thead>
+                    <tbody id="rezijeTable">
+                         
+                    </tbody>
+                </table>
+            </div>
+
+            
+
+            <div class="section__detaljiNajma-items" id="detaljiNajma_table">
+                <label class="label__najam" for="label__najam">Najam</label><br>
+                <table id="table__najam" class="table__najam">
+                    
+                    <tbody id="placeniNajmoviTable">
+                        
+                         
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+
+    </section>
+</body>
+
+
+
+
+</html>
